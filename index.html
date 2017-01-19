@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        header {
+            display: flex;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            justify-content: center;
+            align-items: center;
+            font-family: 'helvetica neue', helvetica, arial, sans-serif;
+            font-size: 10vw;
+            letter-spacing: 0.5vw;
+            color: #666;
+        }
+        header a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1vw solid blue;
+            margin-bottom: -1vw;
+            padding-left: 0.5vw;
+        }
+        header a:hover,
+        header a:focus {
+            background-color: #f7f7ff;
+            color: blue;
+            border-color: #333;
+        }
+        header:after {
+            content: '.com';
+            color: #ccc;
+        }
+        @media (min-width: 320px) {
+            header { font-size: 32px; }
+            header a {
+                border-bottom-width: 3px;
+                margin-bottom: -3px;
+            }
+        }
+    }
+    </style>
+    <title>daveowenville.com</title>
+</head>
+<body>
+    <header><a href="https://www.linkedin.com/in/dave-p-jarzembski-owen-904b457">daveowen</a>ville</header>
+</body>
+</html>
