@@ -21,6 +21,8 @@
             border-bottom: 1vw solid blue;
             margin-bottom: -1vw;
             padding-left: 0.5vw;
+            text-transform: lowercase;
+            word-spacing: calc(-0.5vw - 0.25em);
         }
         nav a:hover,
         nav a:focus {
@@ -36,7 +38,6 @@
             content: '.com';
             color: #ccc;
         }
-        nav .name { visibility: hidden; }
         @media (min-width: 320px) {
             nav { font-size: 32px; }
             nav a {
@@ -46,15 +47,23 @@
         }
     }
     </style>
-    <title itemprop="name">Dave Owen: About</title>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "Person",
+            "url": "http://daveowenville.com",
+            "name": "Dave Owen",
+            "alternateName": "Dave P Jarzembski Owen",
+            "sameAs": "https://www.linkedin.com/in/dave-p-jarzembski-owen-904b457"
+        }
+	</script>
+    <title itemprop="name">About Dave Owen</title>
     <link rel="canonical" href="http://daveowenville.com" itemprop="url">
 </head>
 <body>
-    <nav role="navigation" itemscope itemtype="http://schema.org/Person">
-        <link itemprop="url" href="http://daveowenville.com">
-        <span itemprop="name" class="name">Dave Owen</span>
+    <nav role="navigation">
         <a href="https://www.linkedin.com/in/dave-p-jarzembski-owen-904b457"
-           itemprop="sameAs" aria-label="LinkedIn Profile for Dave Owen">daveowen</a>
+           itemprop="sameAs" aria-label="Dave Owen's LinkedIn Profile">Dave Owen</a>
         <span aria-hidden="true"></span>
     </nav>
 </body>
